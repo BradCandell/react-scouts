@@ -1,15 +1,15 @@
 import React from 'react';
+import Navigation from '../Navigation';
 import './Footer.scss';
-import Navigation from '../Navigation/Navigation';
 
 const Footer: React.FC = () => {
     return (
         <footer className="scout-footer">
             <div className="scout-footer-top">
                 <p>
-                    1415 Menomonie Street - Eau Claire, WI 54703
+                    1201 Main Street - Eau Claire, WI 54703
                     <br />
-                    715-559-4794
+                    715-123-4145
                 </p>
 
                 <Navigation />
