@@ -5,16 +5,15 @@ import './Header.scss';
 import pkg from '../../../../package.json';
 
 const Header: React.FC = () => {
+    const unitName = `${pkg.unit.level} - ${pkg.unit.type} ${pkg.unit.number}`;
+    const unitLocation = `${pkg.unit.address.city}, ${pkg.unit.address.state}`;
+
     return (
         <header className="scout-header">
             <Flag />
             <div className="scout-title">
-                <h1>
-                    {pkg.unit.level} - {pkg.unit.type} {pkg.unit.number}
-                </h1>
-                <h2>
-                    {pkg.unit.city}, {pkg.unit.state}
-                </h2>
+                <h1>{unitName}</h1>
+                <h2>{unitLocation}</h2>
             </div>
             <Navigation />
         </header>

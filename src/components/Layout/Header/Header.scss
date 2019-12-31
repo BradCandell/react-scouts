@@ -1,9 +1,13 @@
 @import '../../../styles/variables';
 
+$primaryPolyfill: #ff00ff;
+$secondaryPolyfill: #ff0000;
+$contrastPolyfill: #fff;
+
 .scout-header {
-    background: var(--scout-header-primary, $official-corporate-blue);
-    border-bottom: 0.25rem solid var(--scout-header-secondary, $official-corporate-red);
-    color: var(--scout-header-foreground, #fff);
+    background: var(--scout-primary, $primaryPolyfill);
+    border-bottom: 0.25rem solid var(--scout-secondary, $secondaryPolyfill);
+    color: var(--scout-primary-contrast, $contrastPolyfill);
     box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12);
     position: fixed;
     top: 0;
@@ -11,7 +15,7 @@
     right: 0;
     font-size: 0.875rem;
     font-weight: 300;
-    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $official-font-primary;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,25 +62,25 @@
 
             a {
                 display: block;
-                color: var(--scout-header-foreground, #fff);
+                color: var(--scout-primary-contrast, $contrastPolyfill);
                 margin: 0;
                 padding: 0.875rem 1rem;
                 text-decoration: none;
+                font-weight: 300;
 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.1);
-                    color: var(--scout-header-foreground, #fff);
+                    color: var(--scout-primary-contrast, $contrastPolyfill);
                     text-decoration: none;
                 }
 
                 &:focus {
-                    color: var(--scout-header-foreground, #fff);
+                    color: var(--scout-primary-contrast, $contrastPolyfill);
                 }
 
                 &.active {
-                    font-weight: 600;
-                    background-color: var(--scout-header-secondary, $official-corporate-red);
-                    color: var(--scout-header-foreground-active, var(--scout-header-foreground, #fff));
+                    background-color: var(--scout-secondary, $secondaryPolyfill);
+                    color: var(--scout-secondary-contrast, $contrastPolyfill);
                 }
             }
         }

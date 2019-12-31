@@ -1,8 +1,10 @@
 @import 'variables';
 
 html[data-theme='bsa'] {
-    --scout-header-primary: #{$official-bsa-olive};
-    --scout-header-secondary: #{$official-bsa-tan};
-    --scout-header-foreground: #fff;
-    --scout-header-foreground-active: #{$official-bsa-olive};
+    --scout-primary: rgb(#{$official-bsa-olive});
+    --scout-primary-values: #{$official-bsa-olive};
+    --scout-primary-contrast: rgb(255, 255, 255);
+    --scout-secondary: rgb(#{$official-bsa-tan});
+    --scout-secondary-values: #{$official-bsa-tan};
+    --scout-secondary-contrast: rgb(#{$official-bsa-olive});
 }

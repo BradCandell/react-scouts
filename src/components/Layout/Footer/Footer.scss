@@ -1,12 +1,13 @@
 @import '../../../styles/variables';
 
 .scout-footer {
-    background-color: rgba($official-corporate-blue-dark, 0.5);
     color: #fff;
     text-align: center;
     padding-top: 1.5rem;
-
+    background-color: rgba(var(--scout-primary-values), 0.55);
     .scout-footer-top {
+        margin: 0;
+
         ul {
             display: flex;
             justify-content: space-evenly;
@@ -51,7 +52,7 @@
     }
 
     .scout-footer-bottom {
-        background-color: $official-corporate-blue-dark;
+        background-color: var(--scout-primary);
         padding: 0.75rem 0;
     }
 }

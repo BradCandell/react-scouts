@@ -1,8 +1,10 @@
 @import 'variables';
 
 html[data-theme='cub'] {
-    --scout-header-primary: #{$official-cs-blue};
-    --scout-header-secondary: #{$official-cs-gold};
-    --scout-header-foreground: #fff;
-    --scout-header-foreground-active: #{$official-cs-blue};
+    --scout-primary: rgb(#{$official-cs-blue});
+    --scout-primary-values: #{$official-cs-blue};
+    --scout-primary-contrast: rgb(255, 255, 255);
+    --scout-secondary: rgb(#{$official-cs-gold});
+    --scout-secondary-values: #{$official-cs-gold};
+    --scout-secondary-contrast: rgb(#{$official-cs-blue});
 }
