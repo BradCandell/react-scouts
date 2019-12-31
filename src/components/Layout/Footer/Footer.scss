@@ -1,7 +1,7 @@
 @import '../../../styles/variables';
 
 .scout-footer {
-    background-color: rgba($official-bsa-blue-dark, 0.5);
+    background-color: rgba($official-corporate-blue-dark, 0.5);
     color: #fff;
     text-align: center;
     padding-top: 1.5rem;
@@ -51,7 +51,7 @@
     }
 
     .scout-footer-bottom {
-        background-color: $official-bsa-blue-dark;
+        background-color: $official-corporate-blue-dark;
         padding: 0.75rem 0;
     }
 }

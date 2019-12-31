@@ -1,14 +1,9 @@
 @import '../../../styles/variables';
 
-$header-primary: $official-cs-blue;
-$header-secondary: $official-cs-gold;
-$header-foreground: #fff;
-$header-active-foreground: $official-cs-blue;
-
 .scout-header {
-    background: $header-primary;
-    border-bottom: 0.25rem solid $header-secondary;
-    color: $header-foreground;
+    background: var(--scout-header-primary, $official-corporate-blue);
+    border-bottom: 0.25rem solid var(--scout-header-secondary, $official-corporate-red);
+    color: var(--scout-header-foreground, #fff);
     box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12);
     position: fixed;
     top: 0;
@@ -63,25 +58,25 @@ $header-active-foreground: $official-cs-blue;
 
             a {
                 display: block;
-                color: $header-foreground;
+                color: var(--scout-header-foreground, #fff);
                 margin: 0;
                 padding: 0.875rem 1rem;
                 text-decoration: none;
 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.1);
-                    color: $header-foreground;
+                    color: var(--scout-header-foreground, #fff);
                     text-decoration: none;
                 }
 
                 &:focus {
-                    color: $header-foreground;
+                    color: var(--scout-header-foreground, #fff);
                 }
 
                 &.active {
                     font-weight: 600;
-                    background-color: $header-secondary;
-                    color: $header-active-foreground;
+                    background-color: var(--scout-header-secondary, $official-corporate-red);
+                    color: var(--scout-header-foreground-active, var(--scout-header-foreground, #fff));
                 }
             }
         }

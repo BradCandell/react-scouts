@@ -1,0 +1,8 @@
+@import 'variables';
+
+html[data-theme='bsa'] {
+    --scout-header-primary: #{$official-bsa-olive};
+    --scout-header-secondary: #{$official-bsa-tan};
+    --scout-header-foreground: #fff;
+    --scout-header-foreground-active: #{$official-bsa-olive};
+}
