@@ -1,0 +1,89 @@
+@import '../../../styles/variables';
+
+$header-primary: $official-cs-blue;
+$header-secondary: $official-cs-gold;
+$header-foreground: #fff;
+$header-active-foreground: $official-cs-blue;
+
+.scout-header {
+    background: $header-primary;
+    border-bottom: 0.25rem solid $header-secondary;
+    color: $header-foreground;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5000;
+
+    svg {
+        width: 4.0625rem;
+        height: 4.6875rem;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+
+    .scout-title {
+        margin-left: calc(1rem + 4.0625rem + 0.65rem);
+
+        h1 {
+            margin: 0;
+            font-size: 1.1rem;
+            padding: 0;
+            margin-top: -0.475rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 0.7rem;
+            font-weight: 300;
+            margin-bottom: -0.475rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            a {
+                display: block;
+                color: $header-foreground;
+                margin: 0;
+                padding: 0.875rem 1rem;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    color: $header-foreground;
+                    text-decoration: none;
+                }
+
+                &:focus {
+                    color: $header-foreground;
+                }
+
+                &.active {
+                    font-weight: 600;
+                    background-color: $header-secondary;
+                    color: $header-active-foreground;
+                }
+            }
+        }
+    }
+}

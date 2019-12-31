@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" height="4.6875rem" width="4.0625rem" viewBox="0 0 65 75">
+  <defs>
+    <filter
+       height="1.0407314"
+       y="-0.020365714"
+       width="1.0459871"
+       x="-0.022993548"
+       id="filter1971"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1973"
+         stdDeviation="0.594" />
+    </filter>
+  </defs>
+  <path
+     transform="matrix(0.97879762,0,0,0.97879762,0.86726241,0.09477388)"
+     id="path831"
+     d="m 63.060656,0 v 60 l -31,10 L 1.0606602,60 V 0"
+     style="opacity:0.38299997;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;filter:url(#filter1971)" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.97879761"
+     id="path2"
+     d="M 1.9054341,0.09477388 H 62.590882 V 58.822631 L 32.248156,68.610607 1.9054341,58.822631" />
+</svg>
