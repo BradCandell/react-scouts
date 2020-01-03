@@ -3,6 +3,7 @@ import Navigation from '../Navigation';
 import { ReactComponent as Flag } from './Flag.svg';
 import './Header.scss';
 import pkg from '../../../../package.json';
+import Logo from '../../Logo/Logo';
 
 const Header: React.FC = () => {
     const unitName = `${pkg.unit.level} - ${pkg.unit.type} ${pkg.unit.number}`;
@@ -11,6 +12,7 @@ const Header: React.FC = () => {
     return (
         <header className="scout-header">
             <Flag />
+            <Logo />
             <div className="scout-title">
                 <h1>{unitName}</h1>
                 <h2>{unitLocation}</h2>

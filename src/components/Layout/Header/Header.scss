@@ -23,6 +23,14 @@
         position: absolute;
         top: 0;
         left: 1rem;
+        z-index: 5001;
+    }
+
+    img {
+        z-index: 9000;
+        position: absolute;
+        top: 0.225rem;
+        left: calc((4.0625rem / 2) - (3.125rem / 2) + 1rem);
     }
 
     .scout-title {
