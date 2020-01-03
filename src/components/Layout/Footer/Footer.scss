@@ -4,7 +4,7 @@
     color: #fff;
     text-align: center;
     padding-top: 1.5rem;
-    background-color: rgba(var(--scout-primary-values), 0.55);
+    background-color: rgba($official-corporate-blue, 0.55);
 
     .scout-footer-top {
         margin: 0;
@@ -53,7 +53,25 @@
     }
 
     .scout-footer-bottom {
-        background-color: var(--scout-primary);
+        background-color: $official-corporate-blue;
         padding: 0.75rem 0;
+    }
+}
+
+html[data-theme='cub'] {
+    .scout-footer {
+        background-color: rgba($official-cs-blue, 0.55);
+    }
+    .scout-footer-bottom {
+        background-color: $official-cs-blue;
+    }
+}
+
+html[data-theme='bsa'] {
+    .scout-footer {
+        background-color: rgba($official-bsa-olive, 0.55);
+    }
+    .scout-footer-bottom {
+        background-color: $official-bsa-olive;
     }
 }

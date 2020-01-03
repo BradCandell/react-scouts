@@ -1,13 +1,9 @@
 @import '../../../styles/variables';
 
-$primaryPolyfill: #ff00ff;
-$secondaryPolyfill: #ff0000;
-$contrastPolyfill: #fff;
-
 .scout-header {
-    background: var(--scout-primary, $primaryPolyfill);
-    border-bottom: 0.25rem solid var(--scout-secondary, $secondaryPolyfill);
-    color: var(--scout-primary-contrast, $contrastPolyfill);
+    background: $official-corporate-blue;
+    border-bottom: 0.25rem solid $official-corporate-red;
+    color: #fff;
     box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12);
     position: fixed;
     top: 0;
@@ -62,7 +58,7 @@ $contrastPolyfill: #fff;
 
             a {
                 display: block;
-                color: var(--scout-primary-contrast, $contrastPolyfill);
+                color: #fff;
                 margin: 0;
                 padding: 0.875rem 1rem;
                 text-decoration: none;
@@ -70,17 +66,53 @@ $contrastPolyfill: #fff;
 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.1);
-                    color: var(--scout-primary-contrast, $contrastPolyfill);
+                    color: #fff;
                     text-decoration: none;
                 }
 
                 &:focus {
-                    color: var(--scout-primary-contrast, $contrastPolyfill);
+                    color: #fff;
                 }
 
                 &.active {
-                    background-color: var(--scout-secondary, $secondaryPolyfill);
-                    color: var(--scout-secondary-contrast, $contrastPolyfill);
+                    background-color: $official-corporate-red;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+html[data-theme='cub'] {
+    .scout-header {
+        background-color: $official-cs-blue;
+        border-bottom-color: $official-cs-gold;
+
+        ul {
+            li {
+                a {
+                    &.active {
+                        background-color: $official-cs-gold;
+                        color: $official-cs-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-theme='bsa'] {
+    .scout-header {
+        background-color: $official-bsa-olive;
+        border-bottom-color: $official-bsa-tan;
+
+        ul {
+            li {
+                a {
+                    &.active {
+                        background-color: $official-bsa-tan;
+                        color: $official-bsa-olive;
+                    }
                 }
             }
         }

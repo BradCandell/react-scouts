@@ -3,9 +3,6 @@ import Header from './Header';
 import Footer from './Footer';
 
 import './Layout.scss';
-import '../../styles/Scouts.Corporate.scss';
-import '../../styles/Scouts.Cub.scss';
-import '../../styles/Scouts.BSA.scss';
 
 const Layout: React.FC = ({ children }) => {
     return (
