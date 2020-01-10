@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../Navigation';
-import './Footer.scss';
+import styles from './Footer.module.scss';
 import pkg from '../../../../package.json';
 
 const Footer: React.FC = () => {
     const unitAddress = `${pkg.unit.address.street} - ${pkg.unit.address.city}, ${pkg.unit.address.state} ${pkg.unit.address.postalCode}`;
     return (
-        <footer className="scout-footer">
-            <div className="scout-footer-top">
+        <footer className={styles.container}>
+            <div className={styles.top}>
                 <p>
                     {unitAddress}
                     <br />
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 </p>
                 <Navigation />
             </div>
-            <div className="scout-footer-bottom">{pkg.unit.council.name}</div>
+            <div className={styles.bottom}>{pkg.unit.council.name}</div>
         </footer>
     );
 };

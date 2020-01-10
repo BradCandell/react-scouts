@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logo.scss';
+import styles from './Logo.module.scss';
 import { useScoutContext } from '../../contexts/ScoutContext';
 
 export interface LogoProps {
@@ -18,7 +18,7 @@ const Logo: React.FC<LogoProps> = props => {
         logoPath = './logo-bsa.svg';
     }
 
-    return <img src={logoPath} alt="Logo" className="scout-logo" />;
+    return <img src={logoPath} alt="Logo" className={styles.logo} />;
 };
 
 export default Logo;
