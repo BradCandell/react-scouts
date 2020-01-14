@@ -25,11 +25,10 @@ const ScoutProvider: React.FC = ({ children }) => {
         dataTheme = 'bsa';
     }
 
-    React.useEffect(() => {
-        if (dataTheme !== '') {
-            document.documentElement.setAttribute('data-theme', dataTheme);
-        }
-    }, []);
+    if (dataTheme !== '') {
+        document.documentElement.setAttribute('data-theme', dataTheme);
+    }
+
     return <ScoutContext.Provider value={value}>{children}</ScoutContext.Provider>;
 };
 

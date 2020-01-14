@@ -1,6 +1,6 @@
 @import '../../../styles/variables';
 
-.scout-header {
+.container {
     background: $official-corporate-blue;
     border-bottom: 0.25rem solid $official-corporate-red;
     color: #fff;
@@ -33,7 +33,7 @@
         left: calc((4.0625rem / 2) - (3.125rem / 2) + 1rem);
     }
 
-    .scout-title {
+    .title {
         margin-left: calc(1rem + 4.0625rem + 0.65rem);
 
         h1 {
@@ -81,48 +81,36 @@
                 &:focus {
                     color: #fff;
                 }
-
-                &.active {
-                    background-color: $official-corporate-red;
-                    color: #fff;
-                }
             }
         }
+    }
+
+    :global .active {
+        background-color: $official-corporate-red;
+        color: #fff;
     }
 }
 
 html[data-theme='cub'] {
-    .scout-header {
+    .container {
         background-color: $official-cs-blue;
         border-bottom-color: $official-cs-gold;
 
-        ul {
-            li {
-                a {
-                    &.active {
-                        background-color: $official-cs-gold;
-                        color: $official-cs-blue;
-                    }
-                }
-            }
+        :global .active {
+            background-color: $official-cs-gold;
+            color: $official-cs-blue;
         }
     }
 }
 
 html[data-theme='bsa'] {
-    .scout-header {
+    .container {
         background-color: $official-bsa-olive;
         border-bottom-color: $official-bsa-tan;
 
-        ul {
-            li {
-                a {
-                    &.active {
-                        background-color: $official-bsa-tan;
-                        color: $official-bsa-olive;
-                    }
-                }
-            }
+        :global .active {
+            background-color: $official-bsa-tan;
+            color: $official-bsa-olive;
         }
     }
 }

@@ -1,12 +1,12 @@
 @import '../../../styles/variables';
 
-.scout-footer {
+.container {
     color: #fff;
     text-align: center;
     padding-top: 1.5rem;
     background-color: rgba($official-corporate-blue, 0.55);
 
-    .scout-footer-top {
+    .top {
         margin: 0;
 
         ul {
@@ -52,26 +52,28 @@
         }
     }
 
-    .scout-footer-bottom {
+    .bottom {
         background-color: $official-corporate-blue;
         padding: 0.75rem 0;
     }
 }
 
 html[data-theme='cub'] {
-    .scout-footer {
+    .container {
         background-color: rgba($official-cs-blue, 0.55);
-    }
-    .scout-footer-bottom {
-        background-color: $official-cs-blue;
+
+        .bottom {
+            background-color: $official-cs-blue;
+        }
     }
 }
 
 html[data-theme='bsa'] {
-    .scout-footer {
+    .container {
         background-color: rgba($official-bsa-olive, 0.55);
-    }
-    .scout-footer-bottom {
-        background-color: $official-bsa-olive;
+
+        .bottom {
+            background-color: $official-bsa-olive;
+        }
     }
 }
